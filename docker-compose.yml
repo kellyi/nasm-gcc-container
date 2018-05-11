@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nasm-gcc:
+    build: ./nasm-gcc
+    working_dir: /usr/src
+    volumes:
+      - ./nasm-gcc/src:/usr/src
+    command:
+      - /bin/bash
