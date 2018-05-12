@@ -47,3 +47,11 @@ chmod u+x helloworld.out
 ```
 
 ...and you'll see "hello world!" printed to stdout.
+
+## Disassembly
+
+To disassemble an executable, run
+
+```sh
+ndisasm -b 64 helloworld.out > _helloworld.asm
+```
