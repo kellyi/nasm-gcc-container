@@ -25,7 +25,7 @@ docker-compose run nasm-gcc
 ...and you'll see a command prompt like this
 
 ```sh
-root@fa82417446cc:/usr/src#
+llp@fa82417446cc:/usr/src#
 ```
 
 ## Compilation & Linking
