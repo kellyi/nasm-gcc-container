@@ -4,6 +4,7 @@ The container has NASM, GCC, GDB, Make, Vim, et cetera installed.
 
 ## Requirements
 
+- macOS, Linux, or Windows 10
 - Docker
 
 ## Setup
