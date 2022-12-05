@@ -47,6 +47,8 @@ chmod u+x helloworld.out                    # give helloworld.out execute permis
 ./helloworld.out                            # run helloworld.out
 ```
 
+or just `make run`
+
 ...and you'll see "hello world!" printed to stdout.
 
 ## Disassembly
