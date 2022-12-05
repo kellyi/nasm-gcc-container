@@ -41,10 +41,10 @@ for example, run `docker-compose run nasm-gcc` to enter the container shell,
 then run
 
 ```sh
-nasm -felf64 helloworld.asm -o helloworld.o # optimized assembly?
-ld -o helloworld helloworld.o               # link helloworld with helloworld.o
-chmod u+x helloworld
-./helloworld
+nasm -felf64 helloworld.asm -o helloworld.o 
+ld -o helloworld.out helloworld.o           # link helloworld.out with helloworld.o
+chmod u+x helloworld.out                    # give helloworld.out execute permission
+./helloworld.out                            # run helloworld.out
 ```
 
 ...and you'll see "hello world!" printed to stdout.
