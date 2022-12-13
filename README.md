@@ -12,7 +12,7 @@ The container has NASM, GCC, GDB, Make, Vim, et cetera installed.
 Make sure you've got Docker running, then run
 
 ```sh
-docker-compose build
+docker compose build
 ```
 
 ## Development
@@ -20,7 +20,7 @@ docker-compose build
 To load the Debian container's Bash shell run
 
 ```sh
-docker-compose run nasm-gcc
+docker compose run nasm-gcc
 ```
 
 ...and you'll see a command prompt like this
@@ -41,11 +41,13 @@ for example, run `docker-compose run nasm-gcc` to enter the container shell,
 then run
 
 ```sh
-nasm -felf64 helloworld.asm -o helloworld.o
-ld -o helloworld.out helloworld.o
-chmod u+x helloworld.out
-./helloworld.out
+nasm -felf64 helloworld.asm -o helloworld.o 
+ld -o helloworld.out helloworld.o           # link helloworld.out with helloworld.o
+chmod u+x helloworld.out                    # give helloworld.out execute permission
+./helloworld.out                            # run helloworld.out
 ```
+
+or just `make run`
 
 ...and you'll see "hello world!" printed to stdout.
 
